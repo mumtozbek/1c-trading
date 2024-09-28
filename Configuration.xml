@@ -497,6 +497,7 @@
 			<Report>РеестрПеремещений</Report>
 			<Report>ТоварныйОтчет</Report>
 			<DataProcessor>_ЭкспортСчетФактур</DataProcessor>
+			<DataProcessor>StandardDataChangeHistory</DataProcessor>
 			<DataProcessor>ВосстановлениеПредопределенныхЭлементов</DataProcessor>
 			<DataProcessor>ГрупповаяОбработкаСправочниковИДокументов</DataProcessor>
 			<DataProcessor>ГрупповоеПерепроведениеДокументов</DataProcessor>

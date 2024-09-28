@@ -1,0 +1,1649 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">NotificationProcessing</Event>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">OnLoadDataFromSettingsAtServer</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">BeforeLoadDataFromSettingsAtServer</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="PagesDataHistoryManagement" id="129">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Pages data history management</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Pages data history management</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="PagesDataHistoryManagementExtendedTooltip" id="130"/>
+			<ChildItems>
+				<Page name="PageDataHistoryLog" id="131">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просмотр истории</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Page data history log</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageDataHistoryLogExtendedTooltip" id="132"/>
+					<ChildItems>
+						<CommandBar name="CommandBarDataHistoryChangesLog" id="133">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Command bar data history changes log</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Command bar data history changes log</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="CommandBarDataHistoryChangesLogExtendedTooltip" id="134"/>
+							<ChildItems>
+								<Button name="FormRefresh" id="23">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Refresh</CommandName>
+									<ExtendedTooltip name="FormRefreshExtendedTooltip" id="24"/>
+								</Button>
+								<Button name="FormUpdateHistoryForAllObjects" id="111">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.UpdateHistory</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="FormUpdateHistoryForAllObjectsExtendedTooltip" id="112"/>
+								</Button>
+								<ButtonGroup name="FilterCmdGroup" id="66">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Filter cmd group</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Filter cmd group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>Compact</Representation>
+									<ExtendedTooltip name="FilterCmdGroupExtendedTooltip" id="67"/>
+									<ChildItems>
+										<Button name="FormSetFilter" id="19">
+											<Type>CommandBarButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.SetFilter</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отбор</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="FormSetFilterExtendedTooltip" id="20"/>
+										</Button>
+										<Button name="FormClearFilter" id="64">
+											<Type>CommandBarButton</Type>
+											<Enabled>false</Enabled>
+											<CommandName>Form.Command.ClearFilter</CommandName>
+											<ExtendedTooltip name="FormClearFilterExtendedTooltip" id="65"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="FormOpenVersion" id="68">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.OpenVersion</CommandName>
+									<ExtendedTooltip name="FormOpenVersionExtendedTooltip" id="69"/>
+								</Button>
+								<Button name="FormComparePrev" id="70">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ComparePrev</CommandName>
+									<ExtendedTooltip name="FormComparePrevExtendedTooltip" id="71"/>
+								</Button>
+								<Button name="FormCompareCur" id="72">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CompareCur</CommandName>
+									<ExtendedTooltip name="FormCompareCurExtendedTooltip" id="73"/>
+								</Button>
+								<Button name="FormCompareVersion" id="93">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CompareVersion</CommandName>
+									<ExtendedTooltip name="FormCompareVersionExtendedTooltip" id="94"/>
+								</Button>
+								<Button name="FormGoToVersion" id="95">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.GoToVersion</CommandName>
+									<ExtendedTooltip name="FormGoToVersionExtendedTooltip" id="96"/>
+								</Button>
+								<ButtonGroup name="ViewerSettingsCmdGrp" id="123">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Viewer settings cmd grp</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Viewer settings cmd grp</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ViewerSettingsCmdGrpExtendedTooltip" id="124"/>
+									<ChildItems>
+										<Button name="FormExtendedDataHistoryControl" id="127">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ExtendedDataHistoryControl</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="FormExtendedDataHistoryControlExtendedTooltip" id="128"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="FilterGroup" id="14">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры отбора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Filter group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="FilterGroupExtendedTooltip" id="15"/>
+							<ChildItems>
+								<InputField name="VisibleHistoryItemsNumber" id="16">
+									<DataPath>VisibleHistoryItemsNumber</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="VisibleHistoryItemsNumberContextMenu" id="17"/>
+									<ExtendedTooltip name="VisibleHistoryItemsNumberExtendedTooltip" id="18"/>
+									<Events>
+										<Event name="OnChange">VisibleHistoryItemsNumberOnChange</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="FilterPresentation" id="97">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Filter presentation</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="FilterPresentationContextMenu" id="98"/>
+									<ExtendedTooltip name="FilterPresentationExtendedTooltip" id="99"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="List" id="1">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>List</DataPath>
+							<RowPictureDataPath>List.dctPictureIndex</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.zip</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ListContextMenu" id="2">
+								<ChildItems>
+									<ButtonGroup name="ListContextStdCmd" id="88">
+										<ExtendedTooltip name="ListContextStdCmdExtendedTooltip" id="89"/>
+										<ChildItems>
+											<Button name="ListContextMenuCopyToClipboard" id="74">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.List.StandardCommand.CopyToClipboard</CommandName>
+												<ExtendedTooltip name="ListContextMenuCopyToClipboardExtendedTooltip" id="75"/>
+											</Button>
+											<Button name="ListContextMenuSelectAll" id="76">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.List.StandardCommand.SelectAll</CommandName>
+												<ExtendedTooltip name="ListContextMenuSelectAllExtendedTooltip" id="77"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ListContextMenuOpenVersion" id="78">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.OpenVersion</CommandName>
+										<ExtendedTooltip name="ListContextMenuOpenVersionExtendedTooltip" id="79"/>
+									</Button>
+									<Button name="ListContextMenuComparePrev" id="80">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ComparePrev</CommandName>
+										<ExtendedTooltip name="ListContextMenuComparePrevExtendedTooltip" id="81"/>
+									</Button>
+									<Button name="ListContextMenuCompareCur" id="82">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.CompareCur</CommandName>
+										<ExtendedTooltip name="ListContextMenuCompareCurExtendedTooltip" id="83"/>
+									</Button>
+									<Button name="ListContextMenuCompareVersion" id="84">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.CompareVersion</CommandName>
+										<ExtendedTooltip name="ListContextMenuCompareVersionExtendedTooltip" id="85"/>
+									</Button>
+									<Button name="ListContextMenuGoToVersion" id="86">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.GoToVersion</CommandName>
+										<ExtendedTooltip name="ListContextMenuGoToVersionExtendedTooltip" id="87"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ListCommandBar" id="3"/>
+							<ExtendedTooltip name="ListExtendedTooltip" id="4"/>
+							<SearchStringAddition name="ListSearchString" id="5">
+								<AdditionSource>
+									<Item>List</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ListSearchStringContextMenu" id="6"/>
+								<ExtendedTooltip name="ListSearchStringExtendedTooltip" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ListViewStatus" id="8">
+								<AdditionSource>
+									<Item>List</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ListViewStatusContextMenu" id="9"/>
+								<ExtendedTooltip name="ListViewStatusExtendedTooltip" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ListSearchControl" id="11">
+								<AdditionSource>
+									<Item>List</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ListSearchControlContextMenu" id="12"/>
+								<ExtendedTooltip name="ListSearchControlExtendedTooltip" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ListSelection</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="VersionNumber" id="31">
+									<DataPath>List.VersionNumber</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>9</Width>
+									<ContextMenu name="VersionNumberContextMenu" id="32"/>
+									<ExtendedTooltip name="VersionNumberExtendedTooltip" id="33"/>
+								</InputField>
+								<InputField name="DataPresentation" id="90">
+									<DataPath>List.DataPresentation</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DataPresentationContextMenu" id="91"/>
+									<ExtendedTooltip name="DataPresentationExtendedTooltip" id="92"/>
+								</InputField>
+								<InputField name="Date" id="34">
+									<DataPath>List.Date</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="DateContextMenu" id="35"/>
+									<ExtendedTooltip name="DateExtendedTooltip" id="36"/>
+								</InputField>
+								<InputField name="UserFullName" id="43">
+									<DataPath>List.UserFullName</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="UserFullNameContextMenu" id="44"/>
+									<ExtendedTooltip name="UserFullNameExtendedTooltip" id="45"/>
+								</InputField>
+								<InputField name="Comment" id="49">
+									<DataPath>List.Comment</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CommentContextMenu" id="50"/>
+									<ExtendedTooltip name="CommentExtendedTooltip" id="51"/>
+									<Events>
+										<Event name="OnChange">ListCommentOnChange</Event>
+									</Events>
+								</InputField>
+								<InputField name="Node" id="55">
+									<DataPath>List.Node</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="NodeContextMenu" id="56"/>
+									<ExtendedTooltip name="NodeExtendedTooltip" id="57"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<CheckBoxField name="UpdateAtRefresh" id="108">
+							<DataPath>UpdateAtRefresh</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если флажок установлен, то одновременно с обновлением списка (нажатие кнопки F5) будет выполняться обновление истории данных по объекту конфигурации или объекту метаданных, которые указаны в отборе. Таким образом список всегда будет отображать актуальные данные истории.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="UpdateAtRefreshContextMenu" id="109"/>
+							<ExtendedTooltip name="UpdateAtRefreshExtendedTooltip" id="110"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="PageDataHistoryChangesParameters" id="135">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Page data history changes parameters</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="PageDataHistoryChangesParametersExtendedTooltip" id="136"/>
+					<ChildItems>
+						<LabelDecoration name="Decoration1" id="187">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>#807A59</TextColor>
+							<Font ref="style:NormalTextFont" height="14" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка использования истории изменений данных по объектам метаданных</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Decoration1ContextMenu" id="188"/>
+							<ExtendedTooltip name="Decoration1ExtendedTooltip" id="189"/>
+						</LabelDecoration>
+						<CommandBar name="CommandBarDataHistoryManagement" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Command bar data history management</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Command bar data history management</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="CommandBarDataHistoryManagementExtendedTooltip" id="182"/>
+							<ChildItems>
+								<Button name="FormCommitSettings" id="183">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.CommitSettings</CommandName>
+									<ExtendedTooltip name="FormCommitSettingsExtendedTooltip" id="184"/>
+								</Button>
+								<Button name="FormCancelChanges" id="185">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.CancelChanges</CommandName>
+									<ExtendedTooltip name="FormCancelChangesExtendedTooltip" id="186"/>
+								</Button>
+								<Button name="DefaultSettings" id="190">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.DefaultSettings</CommandName>
+									<ExtendedTooltip name="DefaultSettingsРасширеннаяПодсказка" id="191"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<UsualGroup name="GroupHistoryData" id="179">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Group history data</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Group history data</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="GroupHistoryDataExtendedTooltip" id="180"/>
+							<ChildItems>
+								<Table name="DataHistoryTree" id="137">
+									<Representation>Tree</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialTreeView>ExpandTopLevel</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>DataHistoryTree</DataPath>
+									<RowPictureDataPath>DataHistoryTree.IconIdx</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<TitleTextColor>#807A59</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<ContextMenu name="DataHistoryTreeContextMenu" id="138"/>
+									<AutoCommandBar name="DataHistoryTreeCommandBar" id="139">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="DataHistoryTreeExtendedTooltip" id="140"/>
+									<SearchStringAddition name="DataHistoryTreeSearchString" id="141">
+										<AdditionSource>
+											<Item>DataHistoryTree</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryTreeSearchStringContextMenu" id="142"/>
+										<ExtendedTooltip name="DataHistoryTreeSearchStringExtendedTooltip" id="143"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="DataHistoryTreeViewStatus" id="144">
+										<AdditionSource>
+											<Item>DataHistoryTree</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryTreeViewStatusContextMenu" id="145"/>
+										<ExtendedTooltip name="DataHistoryTreeViewStatusExtendedTooltip" id="146"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="DataHistoryTreeSearchControl" id="147">
+										<AdditionSource>
+											<Item>DataHistoryTree</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryTreeSearchControlContextMenu" id="148"/>
+										<ExtendedTooltip name="DataHistoryTreeSearchControlExtendedTooltip" id="149"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnActivateRow">DataHistoryTreeOnActivateRow</Event>
+									</Events>
+									<ChildItems>
+										<ColumnGroup name="DataHistoryTreeObjectData" id="150">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Data history tree object data</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Data history tree object data</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="DataHistoryTreeObjectDataРасширеннаяПодсказка" id="151"/>
+											<ChildItems>
+												<CheckBoxField name="DataHistoryTreeUse" id="155">
+													<DataPath>DataHistoryTree.Use</DataPath>
+													<EditMode>Directly</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="DataHistoryTreeUseContextMenu" id="156"/>
+													<ExtendedTooltip name="DataHistoryTreeUseExtendedTooltip" id="157"/>
+													<Events>
+														<Event name="OnChange">DataHistoryTreeUseOnChange</Event>
+													</Events>
+												</CheckBoxField>
+												<InputField name="DataHistoryTreeItem" id="152">
+													<DataPath>DataHistoryTree.Item</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="DataHistoryTreeItemContextMenu" id="153"/>
+													<ExtendedTooltip name="DataHistoryTreeItemExtendedTooltip" id="154"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+								<Table name="DataHistoryDetailsTree" id="158">
+									<Representation>Tree</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<Header>false</Header>
+									<HorizontalLines>false</HorizontalLines>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<InitialTreeView>ExpandAllLevels</InitialTreeView>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>DataHistoryDetailsTree</DataPath>
+									<RowPictureDataPath>DataHistoryDetailsTree.IconIdx</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<TitleTextColor>#807A59</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+									<ContextMenu name="DataHistoryDetailsTreeContextMenu" id="159"/>
+									<AutoCommandBar name="DataHistoryDetailsTreeCommandBar" id="160">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="DataHistoryDetailsTreeExtendedTooltip" id="161"/>
+									<SearchStringAddition name="DataHistoryDetailsTreeSearchString" id="162">
+										<AdditionSource>
+											<Item>DataHistoryDetailsTree</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryDetailsTreeSearchStringContextMenu" id="163"/>
+										<ExtendedTooltip name="DataHistoryDetailsTreeSearchStringExtendedTooltip" id="164"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="DataHistoryDetailsTreeViewStatus" id="165">
+										<AdditionSource>
+											<Item>DataHistoryDetailsTree</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryDetailsTreeViewStatusContextMenu" id="166"/>
+										<ExtendedTooltip name="DataHistoryDetailsTreeViewStatusExtendedTooltip" id="167"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="DataHistoryDetailsTreeSearchControl" id="168">
+										<AdditionSource>
+											<Item>DataHistoryDetailsTree</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="DataHistoryDetailsTreeSearchControlContextMenu" id="169"/>
+										<ExtendedTooltip name="DataHistoryDetailsTreeSearchControlExtendedTooltip" id="170"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<ColumnGroup name="DataHistoryDetailsTreeObjectData" id="177">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Data history details tree object data</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Data history details tree object data</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="DataHistoryDetailsTreeObjectDataExtendedTooltip" id="178"/>
+											<ChildItems>
+												<CheckBoxField name="DataHistoryDetailsTreeUse" id="171">
+													<DataPath>DataHistoryDetailsTree.Use</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ThreeState>true</ThreeState>
+													<ContextMenu name="DataHistoryDetailsTreeUseContextMenu" id="172"/>
+													<ExtendedTooltip name="DataHistoryDetailsTreeUseExtendedTooltip" id="173"/>
+													<Events>
+														<Event name="OnChange">DataHistoryDetailsTreeUseOnChange</Event>
+													</Events>
+												</CheckBoxField>
+												<InputField name="DataHistoryDetailsTreeItem" id="174">
+													<DataPath>DataHistoryDetailsTree.Item</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="DataHistoryDetailsTreeItemContextMenu" id="175"/>
+													<ExtendedTooltip name="DataHistoryDetailsTreeItemExtendedTooltip" id="176"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.StandardDataChangeHistory</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="MetaPath" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Meta path</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="VisibleHistoryItemsNumber" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество отображаемых элементов истории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>VisibleHistoryItemsNumber</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="List" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список истории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Data" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="DataPresentation" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="VersionNumber" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ версии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Date" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания версии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="User" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="UserName" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UserFullName" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор изменений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DataChangeType" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Data change type</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Comment" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Transaction" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транзакция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Node" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник изменения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="dctPictureIndex" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Dct picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="FilterValue" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Filter value</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="AvailableMetadata" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Available metadata</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Value" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Value</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Presentation" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Presentation</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UseTypeRestriction" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать ограничение типа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="UpdateAtRefresh" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять историю при обновлении списка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>UpdateAtRefresh</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="DataHistoryTree" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Item" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Use" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="IconIdx" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Icon idx</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="FullName" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Full name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectRef" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Object ref</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Level" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Level</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Enabled" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Enabled</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="DataHistoryDetailsTree" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поля и табличные части</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Use" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Item" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IconIdx" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Icon idx</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ref" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ref</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Type" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectRef" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Object ref</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectRowId" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Object row id</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Name" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Enabled" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Enabled</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="MetadataInfo" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Metadata info</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Owner" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Owner</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Type" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Name" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ref" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ref</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IconIdx" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Icon idx</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Presentation</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Use" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Tabular" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tabular</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectRef" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Object ref</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectRowId" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Object row id</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Enabled" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Enabled</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="OldValue" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Old value</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>DataHistoryTreeUse</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">DataHistoryTree.Enabled</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>DataHistoryDetailsTreeUse</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">DataHistoryDetailsTree.Enabled</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="SetFilter" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отбор. Без установки отбора список отобразить невозможно.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.FilterCriterion</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>SetFilter</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Refresh" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список записей истории данных. Возможно одновременное обновление истории данных (при установке флажка "Обновлять историю при обновлении списка").</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Refresh</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ClearFilter" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить текущий отбор и открыть форму редактирования нового отбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizardCreateTempTableDropQuery</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ClearFilter</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="OpenVersion" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть версию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть данные выбранной версии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>OpenVersion</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ComparePrev" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с предыдущей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить выбранную версию с предыдущей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ComparePrev</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CompareCur" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с текущей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить выбранную версию с текущей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CompareCur</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CompareVersion" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить версии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить две произвольные версии одного объекта информационной базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CompareVersion</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="GoToVersion" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на версию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на выбранную версию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>GoToVersion</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="UpdateHistory" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить историю данных по всем метаданным, для которых включено использование истории данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+F5</Shortcut>
+			<Action>UpdateHistory</Action>
+		</Command>
+		<Command name="ExtendedDataHistoryControl" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление историей данных...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позволяет выполнить команды все команды управления историей данных с точным указанием параметров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ExtendedDataHistoryControl</Action>
+		</Command>
+		<Command name="CommitSettings" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Commit settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CommitSettings</Action>
+		</Command>
+		<Command name="CancelChanges" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cancel changes</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CancelChanges</Action>
+		</Command>
+		<Command name="DefaultSettings" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Default settings</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DefaultSettings</Action>
+		</Command>
+	</Commands>
+</Form>

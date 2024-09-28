@@ -497,8 +497,8 @@
 		<Metadata name="CommonAttribute.Основание" id="181bf9f5-7c71-4229-a70d-6639aa230e83" configVersion="151d203ff96f77438644bb6737bae5f200000000"/>
 		<Metadata name="CommonAttribute.Проект" id="6f77d060-bc09-48dd-9bb3-fa4f915893ec" configVersion="9cdaf98318efce45b2bf9c0e01edb2d500000000"/>
 		<Metadata name="CommonAttribute.Филиал" id="90c57cf8-f171-4a9e-ae0c-d75e383d1994" configVersion="0b41b954c17b75408f3b9a02d74fd43400000000"/>
-		<Metadata name="CommonCommand.StandardDataChangeHistory" id="435737a5-da4c-476a-87b4-420ac1f22e35" configVersion="01a72ae68383b9458e3118a2bc1c22b200000000"/>
-		<Metadata name="CommonCommand.StandardDataChangeHistory.CommandModule" id="435737a5-da4c-476a-87b4-420ac1f22e35.2" configVersion="6f4d3276c36d724da409fe4efd47048800000000"/>
+		<Metadata name="CommonCommand.StandardDataChangeHistory" id="435737a5-da4c-476a-87b4-420ac1f22e35" configVersion="71febedf6e9d9844a8d43bc9c77559b000000000"/>
+		<Metadata name="CommonCommand.StandardDataChangeHistory.CommandModule" id="435737a5-da4c-476a-87b4-420ac1f22e35.2" configVersion="35768852ccd02f45a58a10a060460c1100000000"/>
 		<Metadata name="CommonCommand.StandardDataChangeHistory.Help" id="435737a5-da4c-476a-87b4-420ac1f22e35.1" configVersion="802ab5b9188752448bdbbd864d6f72cf00000000"/>
 		<Metadata name="CommonCommand.StandardDeleteMarkedObjects" id="e7b1c5ca-8051-457d-9a2b-ef1606ea8eae" configVersion="c9dff0ab260ebd4b973bdd9405af8d1a00000000"/>
 		<Metadata name="CommonCommand.StandardDeleteMarkedObjects.CommandModule" id="e7b1c5ca-8051-457d-9a2b-ef1606ea8eae.2" configVersion="e9e4987b52d64d42a34a39a278975d9400000000"/>
@@ -634,7 +634,7 @@
 		<Metadata name="CommonTemplate.ТТНПоТаре.Template" id="0aa8922e-bebc-41e3-add9-3c3a89526b75.0" configVersion="ab36b810f7a0764baad1aba557e48f9600000000"/>
 		<Metadata name="CommonTemplate.Экспорт" id="170de429-bb6e-49f0-a76c-731cadd005bf" configVersion="0bda6f3fa3dce04aa710950efc8d223c00000000"/>
 		<Metadata name="CommonTemplate.Экспорт.Template" id="170de429-bb6e-49f0-a76c-731cadd005bf.0" configVersion="855ce204e0b7fe499740b91f7158d4e200000000"/>
-		<Metadata name="Configuration.ОптоваяТорговля" id="aac1f45b-fab2-40a1-a972-ee0cf018da08" configVersion="421b47cc4a15d7468432989f78704f7a00000000"/>
+		<Metadata name="Configuration.ОптоваяТорговля" id="aac1f45b-fab2-40a1-a972-ee0cf018da08" configVersion="60f5364a5f708941bdf067558866ea8a00000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.ClientApplicationInterface" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.b" configVersion="593b32e8fe7e2a478dac9b538d0bdab000000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.CommandInterface" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.a" configVersion="f77f42ff59b7cf4e88ba25d38851d2ff00000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.ExternalConnectionModule" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.5" configVersion="3f3f16b475151648a298f704e8699b8e00000000"/>
@@ -679,6 +679,25 @@
 		<Metadata name="Constant.РегламентноеПерепроведение_КонецПериода" id="2fa6ba9b-8207-4083-9324-ae843d42db9f" configVersion="47a764f3ed4be04184f20a9c954fda5b00000000"/>
 		<Metadata name="Constant.РегламентноеПерепроведение_НачалоПериода" id="0a74c63f-a0a6-4aa5-b491-fec68866c63b" configVersion="fec2c8f43a176c498e8c2e93a29888c900000000"/>
 		<Metadata name="Constant.ЭДО_ОсновнойОператор" id="9e04c5b7-ef76-49a4-a40c-2a0ce4d92822" configVersion="ca49a8f8dde8c047b3251683a21524ec00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory" id="98fba57c-3d4d-4a02-b5b0-ec47da33a3d1" configVersion="1cfd0f2deb40c34f80fa3ad0c8bd778f00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryFilter" id="113db6f7-bb7e-494b-8cee-9643b30164ad" configVersion="b695503f4fde364999ff5f05c25bf0ef00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryFilter.Form" id="113db6f7-bb7e-494b-8cee-9643b30164ad.0" configVersion="1637a3bd70998242ae09597c9c4535a300000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryFilter.Help" id="113db6f7-bb7e-494b-8cee-9643b30164ad.1" configVersion="f7c6afbd129ce84f8d723defdd5526ee00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryManagement" id="59dfdd62-7a5a-41d6-bc27-fda0e058d4aa" configVersion="5db8b1e89b5e8345946806cb9bc80ac900000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryManagement.Form" id="59dfdd62-7a5a-41d6-bc27-fda0e058d4aa.0" configVersion="b2821785546da74bbdd7e7b1132405ac00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.DataHistoryManagement.Help" id="59dfdd62-7a5a-41d6-bc27-fda0e058d4aa.1" configVersion="5ae547a0dc5bc746b87504f3372a596600000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.Form" id="a4be86ab-f142-48e9-bffe-737d7ac4f99f" configVersion="d4fe0ccfbeafff429ca002a1d96b8bb000000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.Form.Form" id="a4be86ab-f142-48e9-bffe-737d7ac4f99f.0" configVersion="8a103b372ee74c4fbed53cbd982b0f7b00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.Form.Help" id="a4be86ab-f142-48e9-bffe-737d7ac4f99f.1" configVersion="8cd5d12716348340a318413cc0d7790d00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.MetadaSelection" id="6740d52b-daea-4e26-9d89-3401cecad702" configVersion="bf298a40abefaf41959170045d9c87bc00000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.MetadaSelection.Form" id="6740d52b-daea-4e26-9d89-3401cecad702.0" configVersion="388b3e2032f1674baa9f38a582fb25f200000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.MetadaSelection.Help" id="6740d52b-daea-4e26-9d89-3401cecad702.1" configVersion="6a80fd84409f3e4eb4564bfa511012f700000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.UserSelection" id="fae347eb-aa75-4d09-995e-1f1b91c9397a" configVersion="906a0b16b09bd246a9d96e7580b4323800000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.UserSelection.Form" id="fae347eb-aa75-4d09-995e-1f1b91c9397a.0" configVersion="021cfeedef6019409319b16677003c0600000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Form.UserSelection.Help" id="fae347eb-aa75-4d09-995e-1f1b91c9397a.1" configVersion="8a212bcce8506d40b277f832a883ee3400000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.Help" id="98fba57c-3d4d-4a02-b5b0-ec47da33a3d1.1" configVersion="a492f515891ccb4cb0f14264432e403000000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.ManagerModule" id="98fba57c-3d4d-4a02-b5b0-ec47da33a3d1.2" configVersion="38c9a31930a94344a48927763ea3b56800000000"/>
+		<Metadata name="DataProcessor.StandardDataChangeHistory.ObjectModule" id="98fba57c-3d4d-4a02-b5b0-ec47da33a3d1.0" configVersion="fb9cb8013aa86145ad306bfb0c0ffdcf00000000"/>
 		<Metadata name="DataProcessor._ЭкспортСчетФактур" id="0e0369c4-cbf7-4227-9b95-094195633870" configVersion="e92b5a6a1c10a34bbc5452212f64c78100000000"/>
 		<Metadata name="DataProcessor._ЭкспортСчетФактур.Form.ФормаОтчета" id="46813457-d6a5-4d66-9ede-df2239c6bacb" configVersion="ad8ca85ee77f42449959c89de2b82fbd00000000"/>
 		<Metadata name="DataProcessor._ЭкспортСчетФактур.Form.ФормаОтчета.Form" id="46813457-d6a5-4d66-9ede-df2239c6bacb.0" configVersion="3d290ba54d575f449bddb79a448c2f5200000000"/>

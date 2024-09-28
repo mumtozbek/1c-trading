@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Отбор</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="FormCommandBar" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="CloseOK" id="54">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.CloseOK</CommandName>
+				<ExtendedTooltip name="CloseOKExtendedTooltip" id="55"/>
+			</Button>
+			<Button name="FormCancel" id="56">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="FormCancelExtendedTooltip" id="57"/>
+			</Button>
+			<Button name="FormHelp" id="58">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="FormHelpExtendedTooltip" id="59"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeClose">BeforeClose</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="DateIntervalGroup" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Date interval group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Date interval group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="DateIntervalGroupExtendedTooltip" id="42"/>
+			<ChildItems>
+				<InputField name="StartDate" id="45">
+					<DataPath>StartDate</DataPath>
+					<ContextMenu name="StartDateContextMenu" id="46"/>
+					<ExtendedTooltip name="StartDateExtendedTooltip" id="47"/>
+				</InputField>
+				<InputField name="EndDate" id="48">
+					<DataPath>EndDate</DataPath>
+					<ContextMenu name="EndDateContextMenu" id="49"/>
+					<ExtendedTooltip name="EndDateExtendedTooltip" id="50"/>
+				</InputField>
+				<Button name="SelectPeriod" id="43">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.SelectPeriod</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>...</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="SelectPeriodExtendedTooltip" id="44"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="DataMetadata" id="7">
+			<DataPath>DataMetadataPresentation</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<DropListButton>false</DropListButton>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ChooseType>false</ChooseType>
+			<ChoiceListHeight>20</ChoiceListHeight>
+			<ContextMenu name="DataMetadataContextMenu" id="8"/>
+			<ExtendedTooltip name="DataMetadataExtendedTooltip" id="9"/>
+			<Events>
+				<Event name="OnChange">DataMetadataOnChange</Event>
+				<Event name="AutoComplete">DataMetadataAutoComplete</Event>
+				<Event name="StartChoice">DataMetadataStartChoice</Event>
+				<Event name="Clearing">DataMetadataClearing</Event>
+				<Event name="TextEditEnd">DataMetadataTextEditEnd</Event>
+				<Event name="ChoiceProcessing">DataMetadataChoiceProcessing</Event>
+			</Events>
+		</InputField>
+		<InputField name="Data" id="51">
+			<DataPath>DataData</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ChoiceButton>true</ChoiceButton>
+			<ClearButton>true</ClearButton>
+			<ChooseType>false</ChooseType>
+			<ContextMenu name="DataContextMenu" id="52"/>
+			<ExtendedTooltip name="DataExtendedTooltip" id="53"/>
+		</InputField>
+		<UsualGroup name="Group1" id="116">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Group1ExtendedTooltip" id="117"/>
+			<ChildItems>
+				<UsualGroup name="Group2" id="118">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Group2ExtendedTooltip" id="119"/>
+					<ChildItems>
+						<InputField name="DataPresentation" id="63">
+							<DataPath>DataPresentation</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="DataPresentationContextMenu" id="64"/>
+							<ExtendedTooltip name="DataPresentationExtendedTooltip" id="65"/>
+						</InputField>
+						<InputField name="Users" id="60">
+							<DataPath>UsersPresentation</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авторы изменений</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="UsersContextMenu" id="61"/>
+							<ExtendedTooltip name="UsersExtendedTooltip" id="62"/>
+							<Events>
+								<Event name="StartChoice">UsersStartChoice</Event>
+								<Event name="Clearing">UsersClearing</Event>
+							</Events>
+						</InputField>
+						<InputField name="Comments" id="66">
+							<DataPath>Comments</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="CommentsContextMenu" id="67"/>
+							<ExtendedTooltip name="CommentsExtendedTooltip" id="68"/>
+						</InputField>
+						<InputField name="ExchangeNode" id="72">
+							<DataPath>ExchangeNode</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="ExchangeNodeContextMenu" id="73"/>
+							<ExtendedTooltip name="ExchangeNodeExtendedTooltip" id="74"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="DataChangesType" id="10">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Width>20</Width>
+					<HeightControlVariant>UseContentHeight</HeightControlVariant>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>DataChangesType</DataPath>
+					<RowPictureDataPath>DataChangesType.Picture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>Pickup</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<ContextMenu name="DataChangesTypeContextMenu" id="11"/>
+					<AutoCommandBar name="DataChangesTypeCommandBar" id="12">
+						<HorizontalAlign>Right</HorizontalAlign>
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="DataChangesTypeExtendedTooltip" id="13"/>
+					<SearchStringAddition name="DataChangesTypeSearchString" id="14">
+						<AdditionSource>
+							<Item>DataChangesType</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="DataChangesTypeSearchStringContextMenu" id="15"/>
+						<ExtendedTooltip name="DataChangesTypeSearchStringExtendedTooltip" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="DataChangesTypeViewStatus" id="17">
+						<AdditionSource>
+							<Item>DataChangesType</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="DataChangesTypeViewStatusContextMenu" id="18"/>
+						<ExtendedTooltip name="DataChangesTypeViewStatusExtendedTooltip" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="DataChangesTypeSearchControl" id="20">
+						<AdditionSource>
+							<Item>DataChangesType</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="DataChangesTypeSearchControlContextMenu" id="21"/>
+						<ExtendedTooltip name="DataChangesTypeSearchControlExtendedTooltip" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="DataChangesTypeCheck" id="26">
+							<DataPath>DataChangesType.Check</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="DataChangesTypeCheckContextMenu" id="27"/>
+							<ExtendedTooltip name="DataChangesTypeCheckExtendedTooltip" id="28"/>
+						</CheckBoxField>
+						<InputField name="DataChangesTypeValue" id="23">
+							<DataPath>DataChangesType.Value</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="DataChangesTypeValueContextMenu" id="24"/>
+							<ExtendedTooltip name="DataChangesTypeValueExtendedTooltip" id="25"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="AllFiledsGroup" id="120">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>All fileds group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>All fileds group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="AllFiledsGroupExtendedTooltip" id="121"/>
+			<ChildItems>
+				<Page name="FieldsGroup" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Fields group</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="FieldsGroupExtendedTooltip" id="125"/>
+					<ChildItems>
+						<Table name="Fields" id="75">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Fields</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="FieldsContextMenu" id="76"/>
+							<AutoCommandBar name="FieldsCommandBar" id="77"/>
+							<ExtendedTooltip name="FieldsExtendedTooltip" id="78"/>
+							<SearchStringAddition name="FieldsSearchString" id="79">
+								<AdditionSource>
+									<Item>Fields</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="FieldsSearchStringContextMenu" id="80"/>
+								<ExtendedTooltip name="FieldsSearchStringExtendedTooltip" id="81"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="FieldsViewStatus" id="82">
+								<AdditionSource>
+									<Item>Fields</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="FieldsViewStatusContextMenu" id="83"/>
+								<ExtendedTooltip name="FieldsViewStatusExtendedTooltip" id="84"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="FieldsSearchControl" id="85">
+								<AdditionSource>
+									<Item>Fields</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="FieldsSearchControlContextMenu" id="86"/>
+								<ExtendedTooltip name="FieldsSearchControlExtendedTooltip" id="87"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">FieldsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="FieldsPresentation" id="91">
+									<DataPath>Fields.Presentation</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="FieldsPresentationContextMenu" id="92"/>
+									<ExtendedTooltip name="FieldsPresentationExtendedTooltip" id="93"/>
+								</InputField>
+								<CheckBoxField name="FieldsIsChange" id="100">
+									<DataPath>Fields.IsChange</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="FieldsIsChangeContextMenu" id="101"/>
+									<ExtendedTooltip name="FieldsIsChangeExtendedTooltip" id="102"/>
+									<Events>
+										<Event name="OnChange">FieldsCheckBoxOnChange</Event>
+									</Events>
+								</CheckBoxField>
+								<ColumnGroup name="FieldsBeforeGroup" id="114">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение до изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Fields before group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="FieldsBeforeGroupExtendedTooltip" id="115"/>
+									<ChildItems>
+										<CheckBoxField name="FieldsIsValueBeforeChange" id="109">
+											<DataPath>Fields.IsValueBeforeChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="FieldsIsValueBeforeChangeContextMenu" id="110"/>
+											<ExtendedTooltip name="FieldsIsValueBeforeChangeExtendedTooltip" id="111"/>
+											<Events>
+												<Event name="OnChange">FieldsCheckBoxOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="FieldsValueBeforeChange" id="97">
+											<DataPath>Fields.ValueBeforeChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<TypeLink>
+												<xr:DataPath>Items.Fields.CurrentData.ValueType</xr:DataPath>
+												<xr:LinkItem>0</xr:LinkItem>
+											</TypeLink>
+											<ContextMenu name="FieldsValueBeforeChangeContextMenu" id="98"/>
+											<ExtendedTooltip name="FieldsValueBeforeChangeExtendedTooltip" id="99"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="FieldsAfterGroup" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение после изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Fields after group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="FieldsAfterGroupExtendedTooltip" id="113"/>
+									<ChildItems>
+										<CheckBoxField name="FieldsIsValueAfterChange" id="106">
+											<DataPath>Fields.IsValueAfterChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="FieldsIsValueAfterChangeContextMenu" id="107"/>
+											<ExtendedTooltip name="FieldsIsValueAfterChangeExtendedTooltip" id="108"/>
+											<Events>
+												<Event name="OnChange">FieldsCheckBoxOnChange</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="FieldsValueAfterChange" id="94">
+											<DataPath>Fields.ValueAfterChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<TypeLink>
+												<xr:DataPath>Items.Fields.CurrentData.ValueType</xr:DataPath>
+												<xr:LinkItem>0</xr:LinkItem>
+											</TypeLink>
+											<ContextMenu name="FieldsValueAfterChangeContextMenu" id="95"/>
+											<ExtendedTooltip name="FieldsValueAfterChangeExtendedTooltip" id="96"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="MissedFiledsGroup" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенный отбор по полям</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Missed fileds group</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="MissedFiledsGroupExtendedTooltip" id="123"/>
+					<ChildItems>
+						<Table name="MissedFileds" id="126">
+							<Representation>Tree</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>MissedFields</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="MissedFiledsContextMenu" id="127"/>
+							<AutoCommandBar name="MissedFiledsCommandBar" id="128"/>
+							<ExtendedTooltip name="MissedFiledsExtendedTooltip" id="129"/>
+							<SearchStringAddition name="MissedFiledsSearchString" id="130">
+								<AdditionSource>
+									<Item>MissedFileds</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="MissedFiledsSearchStringContextMenu" id="131"/>
+								<ExtendedTooltip name="MissedFiledsSearchStringExtendedTooltip" id="132"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="MissedFiledsViewStatus" id="133">
+								<AdditionSource>
+									<Item>MissedFileds</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="MissedFiledsViewStatusContextMenu" id="134"/>
+								<ExtendedTooltip name="MissedFiledsViewStatusExtendedTooltip" id="135"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="MissedFiledsSearchControl" id="136">
+								<AdditionSource>
+									<Item>MissedFileds</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="MissedFiledsSearchControlContextMenu" id="137"/>
+								<ExtendedTooltip name="MissedFiledsSearchControlExtendedTooltip" id="138"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">MissedFiledsOnChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="MIssedFiledsName" id="155">
+									<DataPath>MissedFields.Name</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="MIssedFiledsNameContextMenu" id="156"/>
+									<ExtendedTooltip name="MIssedFiledsNameExtendedTooltip" id="157"/>
+								</InputField>
+								<CheckBoxField name="MIssedFiledsIsChange" id="170">
+									<DataPath>MissedFields.IsChange</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="MIssedFiledsIsChangeContextMenu" id="171"/>
+									<ExtendedTooltip name="MIssedFiledsIsChangeExtendedTooltip" id="172"/>
+								</CheckBoxField>
+								<ColumnGroup name="MIssedFieldsBeforeGroup" id="145">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение до изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>M issed fields before group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="MIssedFieldsBeforeGroupExtendedTooltip" id="146"/>
+									<ChildItems>
+										<CheckBoxField name="MIssedFiledsIsValueBeforeChange" id="158">
+											<DataPath>MissedFields.IsValueBeforeChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="MIssedFiledsIsValueBeforeChangeContextMenu" id="159"/>
+											<ExtendedTooltip name="MIssedFiledsIsValueBeforeChangeExtendedTooltip" id="160"/>
+										</CheckBoxField>
+										<InputField name="MIssedFiledsValueBeforeChange" id="161">
+											<DataPath>MissedFields.ValueBeforeChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="MIssedFiledsValueBeforeChangeContextMenu" id="162"/>
+											<ExtendedTooltip name="MIssedFiledsValueBeforeChangeExtendedTooltip" id="163"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="MIssedFieldsAfterGroup" id="153">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение после изменения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>M issed fields after group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ShowInHeader>true</ShowInHeader>
+									<ExtendedTooltip name="MIssedFieldsAfterGroupExtendedTooltip" id="154"/>
+									<ChildItems>
+										<CheckBoxField name="MIssedFiledsIsValueAfterChange" id="164">
+											<DataPath>MissedFields.IsValueAfterChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="MIssedFiledsIsValueAfterChangeContextMenu" id="165"/>
+											<ExtendedTooltip name="MIssedFiledsIsValueAfterChangeExtendedTooltip" id="166"/>
+										</CheckBoxField>
+										<InputField name="MIssedFiledsValueAfterChange" id="167">
+											<DataPath>MissedFields.ValueAfterChange</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ShowInHeader>false</ShowInHeader>
+											<ContextMenu name="MIssedFiledsValueAfterChangeContextMenu" id="168"/>
+											<ExtendedTooltip name="MIssedFiledsValueAfterChangeExtendedTooltip" id="169"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.StandardDataChangeHistory</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="DataMetadata" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="DataData" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Users" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="DataChangesType" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид изменения данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="StartDate" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал отображения, с</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="EndDate" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="MetaPath" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Meta path</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Comments" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Transactions" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транзакция</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="DataPresentation" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExchangeNode" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="DataMetadataPresentation" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метаданные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="UsersPresentation" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Users presentation</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AvailableMetadata" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Available metadata</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Value" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Value</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="Presentation" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Presentation</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UseTypeRestriction" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать ограничение типа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Fields" id="21">
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Presentation" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ValueAfterChange" id="3">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>ent:AccountingRecordType</v8:Type>
+						<v8:Type>ent:AccountType</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:Type>v8:UUID</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ValueBeforeChange" id="4">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>ent:AccountingRecordType</v8:Type>
+						<v8:Type>ent:AccountType</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:Type>v8:UUID</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsChange" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение менялось</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ValueType" id="6">
+					<Type>
+						<v8:Type>v8:TypeDescription</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsValueAfterChange" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsValueBeforeChange" id="8">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsDisableFilterByValue" id="9">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="MissedFields" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Missed fields</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ValueAfterChange" id="3">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:Type>v8:UUID</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ValueBeforeChange" id="4">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:Type>v8:UUID</v8:Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsChange" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение менялось</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsValueAfterChange" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="IsValueBeforeChange" id="8">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>FieldsIsValueAfterChange</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>FieldsValueAfterChange</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>FieldsIsValueBeforeChange</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>FieldsValueBeforeChange</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Fields.IsDisableFilterByValue</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="SelectPeriod" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позволяет выбрать период отображения информации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SelectPeriod</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="CloseOK" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить установленное значение отбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>CloseOK</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Filter">
+			<Type/>
+		</Parameter>
+		<Parameter name="AvailableMetadata">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>
