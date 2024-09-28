@@ -342,6 +342,7 @@
 			<CommonCommand>StandardDataChangeHistory</CommonCommand>
 			<CommonCommand>StandardDeleteMarkedObjects</CommonCommand>
 			<CommonCommand>StandardFindByReference</CommonCommand>
+			<CommonCommand>StandardFullTextSearchManagement</CommonCommand>
 			<CommonCommand>StandardTotalsManagement</CommonCommand>
 			<CommonCommand>ДокументОтправитьЭДО</CommonCommand>
 			<CommonCommand>ДокументПодписатьЭДО</CommonCommand>
