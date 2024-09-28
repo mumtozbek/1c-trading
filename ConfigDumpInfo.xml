@@ -497,6 +497,9 @@
 		<Metadata name="CommonAttribute.Основание" id="181bf9f5-7c71-4229-a70d-6639aa230e83" configVersion="151d203ff96f77438644bb6737bae5f200000000"/>
 		<Metadata name="CommonAttribute.Проект" id="6f77d060-bc09-48dd-9bb3-fa4f915893ec" configVersion="9cdaf98318efce45b2bf9c0e01edb2d500000000"/>
 		<Metadata name="CommonAttribute.Филиал" id="90c57cf8-f171-4a9e-ae0c-d75e383d1994" configVersion="0b41b954c17b75408f3b9a02d74fd43400000000"/>
+		<Metadata name="CommonCommand.StandardDataChangeHistory" id="435737a5-da4c-476a-87b4-420ac1f22e35" configVersion="01a72ae68383b9458e3118a2bc1c22b200000000"/>
+		<Metadata name="CommonCommand.StandardDataChangeHistory.CommandModule" id="435737a5-da4c-476a-87b4-420ac1f22e35.2" configVersion="6f4d3276c36d724da409fe4efd47048800000000"/>
+		<Metadata name="CommonCommand.StandardDataChangeHistory.Help" id="435737a5-da4c-476a-87b4-420ac1f22e35.1" configVersion="802ab5b9188752448bdbbd864d6f72cf00000000"/>
 		<Metadata name="CommonCommand.StandardDeleteMarkedObjects" id="e7b1c5ca-8051-457d-9a2b-ef1606ea8eae" configVersion="c9dff0ab260ebd4b973bdd9405af8d1a00000000"/>
 		<Metadata name="CommonCommand.StandardDeleteMarkedObjects.CommandModule" id="e7b1c5ca-8051-457d-9a2b-ef1606ea8eae.2" configVersion="e9e4987b52d64d42a34a39a278975d9400000000"/>
 		<Metadata name="CommonCommand.StandardFindByReference" id="39de5e90-8366-450e-b1ca-a90f1bf34597" configVersion="dda34bffa8c55b4890b514874a0872f800000000"/>
@@ -631,7 +634,7 @@
 		<Metadata name="CommonTemplate.ТТНПоТаре.Template" id="0aa8922e-bebc-41e3-add9-3c3a89526b75.0" configVersion="ab36b810f7a0764baad1aba557e48f9600000000"/>
 		<Metadata name="CommonTemplate.Экспорт" id="170de429-bb6e-49f0-a76c-731cadd005bf" configVersion="0bda6f3fa3dce04aa710950efc8d223c00000000"/>
 		<Metadata name="CommonTemplate.Экспорт.Template" id="170de429-bb6e-49f0-a76c-731cadd005bf.0" configVersion="855ce204e0b7fe499740b91f7158d4e200000000"/>
-		<Metadata name="Configuration.ОптоваяТорговля" id="aac1f45b-fab2-40a1-a972-ee0cf018da08" configVersion="cbcdf8f22507194d8b37be01fc5bc86700000000"/>
+		<Metadata name="Configuration.ОптоваяТорговля" id="aac1f45b-fab2-40a1-a972-ee0cf018da08" configVersion="421b47cc4a15d7468432989f78704f7a00000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.ClientApplicationInterface" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.b" configVersion="593b32e8fe7e2a478dac9b538d0bdab000000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.CommandInterface" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.a" configVersion="f77f42ff59b7cf4e88ba25d38851d2ff00000000"/>
 		<Metadata name="Configuration.ОптоваяТорговля.ExternalConnectionModule" id="e5e84f70-92dd-40de-935d-f2cec8ff9dea.5" configVersion="3f3f16b475151648a298f704e8699b8e00000000"/>
@@ -2090,7 +2093,7 @@
 		<Metadata name="Subsystem.Документы.Subsystem.Списания" id="1efee182-0443-427f-905e-8632581b4f82" configVersion="412d4e7b3938554490a605b20d3daaac00000000"/>
 		<Metadata name="Subsystem.Документы.Subsystem.Финансы" id="063f1196-8846-4ea7-bafa-465ef565b119" configVersion="af6995088883484ba7247dabdc1eb34000000000"/>
 		<Metadata name="Subsystem.Настройки" id="9353a8cc-3c8c-40a4-b3a6-c1239574a24c" configVersion="4a33fa63f6798046a1ff6bc632f138c600000000"/>
-		<Metadata name="Subsystem.Настройки.Subsystem.Администрирование" id="00323c7a-76af-40af-8759-e64707b6bb69" configVersion="1313f192da9930478d03eb805371555100000000"/>
+		<Metadata name="Subsystem.Настройки.Subsystem.Администрирование" id="00323c7a-76af-40af-8759-e64707b6bb69" configVersion="0f02bb643958c1439a20899c40933ede00000000"/>
 		<Metadata name="Subsystem.Настройки.Subsystem.Интеграция" id="0078fba4-657a-4249-827c-c38cc725d5b5" configVersion="d8dcc6b5f1ba5a419aede29a6d0dcc9200000000"/>
 		<Metadata name="Subsystem.Настройки.Subsystem.Организация" id="9beac492-4c0a-4a2f-8fa9-7a2f2e150de9" configVersion="2b8200f1f50740418bfb33a033d4635900000000"/>
 		<Metadata name="Subsystem.Настройки.Subsystem.Справочники" id="c36611a8-9d76-406d-99c9-3d1d999458e9" configVersion="557cf1ba5483d8438fa810d6744b58e900000000"/>

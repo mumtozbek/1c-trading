@@ -339,6 +339,7 @@
 			<FunctionalOptionsParameter>ВидРеализации</FunctionalOptionsParameter>
 			<DefinedType>Цена</DefinedType>
 			<DefinedType>Сумма</DefinedType>
+			<CommonCommand>StandardDataChangeHistory</CommonCommand>
 			<CommonCommand>StandardDeleteMarkedObjects</CommonCommand>
 			<CommonCommand>StandardFindByReference</CommonCommand>
 			<CommonCommand>StandardTotalsManagement</CommonCommand>

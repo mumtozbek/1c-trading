@@ -23,6 +23,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister._Нумераторы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УстановитьПараметрыИтогов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.StandardDataChangeHistory</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
