@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="84926476-3191-4cd1-9ae0-b07af866cbe9">
+		<Name>ВводОстатков</Name>
+		<Code>000000001</Code>
+		<Description>Ввод остатков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="179dce71-24e0-4548-997e-534d63c7239d">
+		<Name>Доход</Name>
+		<Code>000000004</Code>
+		<Description>Доход</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="882576f7-04a6-4b31-95c5-18a5ce93d3de">
+		<Name>Зарплата</Name>
+		<Code>000000006</Code>
+		<Description>Зарплата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ede2a32-1567-41ae-8b9c-8716dc6cc7d8">
+		<Name>Инкассация</Name>
+		<Code>000000007</Code>
+		<Description>Инкассация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c234ebfb-fbed-44ce-8c8c-55e06bbc848b">
+		<Name>КассовыйПеревод</Name>
+		<Code>000000008</Code>
+		<Description>Кассовый перевод</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="432ceea1-78d2-4a90-ba28-5e75e837655e">
+		<Name>ОборотПриход</Name>
+		<Code>000000002</Code>
+		<Description>Оборот (приход)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f96a9eb2-52ec-40a1-a7fa-8634211878b1">
+		<Name>ОборотРасход</Name>
+		<Code>000000003</Code>
+		<Description>Оборот (расход)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="73dcb8e6-aa28-404b-9277-3c54774c194f">
+		<Name>Расход</Name>
+		<Code>000000005</Code>
+		<Description>Расход</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

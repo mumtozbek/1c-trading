@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КомандаСформировать" id="32">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаСформировать</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сформировать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="КомандаСформироватьРасширеннаяПодсказка" id="33"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа5" id="1">
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="3">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="5">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<InputField name="Период" id="7">
+									<DataPath>Отчет.Период</DataPath>
+									<ContextMenu name="ПериодКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="ТипВзаиморасчета" id="10">
+									<DataPath>Отчет.ТипВзаиморасчета</DataPath>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="ТипВзаиморасчетаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ТипВзаиморасчетаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="13">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="14"/>
+							<ChildItems>
+								<InputField name="Агент" id="15">
+									<DataPath>Отчет.Агент</DataPath>
+									<ClearButton>true</ClearButton>
+									<ChoiceParameters>
+										<app:item name="Отбор.Агент">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">true</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="АгентКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="АгентРасширеннаяПодсказка" id="17"/>
+								</InputField>
+								<InputField name="Контрагент" id="18">
+									<DataPath>Отчет.Контрагент</DataPath>
+									<ClearButton>true</ClearButton>
+									<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+									<ContextMenu name="КонтрагентКонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="20"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="21">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<CheckBoxField name="ПоАгентам" id="43">
+							<DataPath>Отчет.ПоАгентам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПоАгентамКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПоАгентамРасширеннаяПодсказка" id="45"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПоКонтрагентам" id="40">
+							<DataPath>Отчет.ПоКонтрагентам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПоКонтрагентамКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ПоКонтрагентамРасширеннаяПодсказка" id="42"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПоГруппам" id="26">
+							<DataPath>Отчет.ПоГруппам</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПоГруппамКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПоГруппамРасширеннаяПодсказка" id="28"/>
+						</CheckBoxField>
+						<CheckBoxField name="Подробно" id="29">
+							<DataPath>Отчет.Подробно</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПодробноКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ПодробноРасширеннаяПодсказка" id="31"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="ТабДок" id="37">
+			<DataPath>ТабДок</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ТабДокКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="39"/>
+			<Events>
+				<Event name="DetailProcessing">ТабДокОбработкаРасшифровки</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ВзаиморасчетыПоКонтрагентам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТабДок" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сформировать</Action>
+		</Command>
+	</Commands>
+</Form>

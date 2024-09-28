@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="8500c85b-30a7-4dea-a032-9f632c6797e8">
+		<Name>Перечисление</Name>
+		<Code>000000002</Code>
+		<Description>Перечисление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23ce8357-0822-42c7-812c-fa44e8452ffe">
+		<Name>Розничный</Name>
+		<Code>000000001</Code>
+		<Description>Розничный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="29818622-b9f1-49a0-bfbe-e8d4da0f5aaf">
+		<Name>Списание</Name>
+		<Code>000000004</Code>
+		<Description>Списание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

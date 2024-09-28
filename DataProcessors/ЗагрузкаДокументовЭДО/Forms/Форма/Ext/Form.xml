@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКомандаВыполнить" id="121">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаВыполнить</CommandName>
+				<ExtendedTooltip name="ФормаКомандаВыполнитьРасширеннаяПодсказка" id="122"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="110">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="111"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="112">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="113"/>
+					<ChildItems>
+						<InputField name="Организация" id="1">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Оператор" id="4">
+							<DataPath>Объект.Оператор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОператорКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ОператорРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">РеквизитыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Тип" id="125">
+							<DataPath>Объект.Тип</DataPath>
+							<DropListButton>true</DropListButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Входящие</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Входящие</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исходящие</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Исходящие</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ТипКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ТипРасширеннаяПодсказка" id="127"/>
+						</InputField>
+						<InputField name="Период" id="116">
+							<DataPath>Объект.Период</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="118"/>
+							<Events>
+								<Event name="OnChange">РеквизитыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Идентификатор" id="16">
+							<DataPath>Объект.Идентификатор</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">РеквизитыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Номер" id="13">
+							<DataPath>Объект.Номер</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НомерКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">РеквизитыПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Документы" id="128">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Документы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДокументыКонтекстноеМеню" id="129"/>
+			<AutoCommandBar name="ДокументыКоманднаяПанель" id="130">
+				<ChildItems>
+					<Button name="ДокументыКомандаЗаполнить" id="180">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаЗаполнить</CommandName>
+						<ExtendedTooltip name="ДокументыКомандаЗаполнитьРасширеннаяПодсказка" id="181"/>
+					</Button>
+					<Button name="ДокументыКомандаОбновить" id="182">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОбновить</CommandName>
+						<ExtendedTooltip name="ДокументыКомандаОбновитьРасширеннаяПодсказка" id="183"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="131"/>
+			<SearchStringAddition name="ДокументыСтрокаПоиска" id="132">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыСтрокаПоискаКонтекстноеМеню" id="133"/>
+				<ExtendedTooltip name="ДокументыСтрокаПоискаРасширеннаяПодсказка" id="134"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДокументыСостояниеПросмотра" id="135">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыСостояниеПросмотраКонтекстноеМеню" id="136"/>
+				<ExtendedTooltip name="ДокументыСостояниеПросмотраРасширеннаяПодсказка" id="137"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДокументыУправлениеПоиском" id="138">
+				<AdditionSource>
+					<Item>Документы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДокументыУправлениеПоискомКонтекстноеМеню" id="139"/>
+				<ExtendedTooltip name="ДокументыУправлениеПоискомРасширеннаяПодсказка" id="140"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ДокументыПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДокументыПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ДокументыНомерСтроки" id="141">
+					<DataPath>Объект.Документы.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ДокументыНомерСтрокиКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ДокументыНомерСтрокиРасширеннаяПодсказка" id="143"/>
+				</LabelField>
+				<InputField name="ДокументыИдентификатор" id="144">
+					<DataPath>Объект.Документы.Идентификатор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыИдентификаторКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="ДокументыИдентификаторРасширеннаяПодсказка" id="146"/>
+				</InputField>
+				<InputField name="ДокументыСтатус" id="147">
+					<DataPath>Объект.Документы.Статус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыСтатусКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ДокументыСтатусРасширеннаяПодсказка" id="149"/>
+				</InputField>
+				<InputField name="ДокументыНомер" id="150">
+					<DataPath>Объект.Документы.Номер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыНомерКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ДокументыНомерРасширеннаяПодсказка" id="152"/>
+				</InputField>
+				<InputField name="ДокументыДата" id="153">
+					<DataPath>Объект.Документы.Дата</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыДатаКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="ДокументыДатаРасширеннаяПодсказка" id="155"/>
+				</InputField>
+				<InputField name="ДокументыСумма" id="156">
+					<DataPath>Объект.Документы.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыСуммаКонтекстноеМеню" id="157"/>
+					<ExtendedTooltip name="ДокументыСуммаРасширеннаяПодсказка" id="158"/>
+				</InputField>
+				<InputField name="ДокументыКонтрагентНаименование" id="159">
+					<DataPath>Объект.Документы.КонтрагентНаименование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыКонтрагентНаименованиеКонтекстноеМеню" id="160"/>
+					<ExtendedTooltip name="ДокументыКонтрагентНаименованиеРасширеннаяПодсказка" id="161"/>
+				</InputField>
+				<InputField name="ДокументыКонтрагентИНН" id="162">
+					<DataPath>Объект.Документы.КонтрагентИНН</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыКонтрагентИННКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="ДокументыКонтрагентИННРасширеннаяПодсказка" id="164"/>
+				</InputField>
+				<InputField name="ДокументыНомерДоговора" id="165">
+					<DataPath>Объект.Документы.НомерДоговора</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыНомерДоговораКонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="ДокументыНомерДоговораРасширеннаяПодсказка" id="167"/>
+				</InputField>
+				<InputField name="ДокументыДатаДоговора" id="168">
+					<DataPath>Объект.Документы.ДатаДоговора</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыДатаДоговораКонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="ДокументыДатаДоговораРасширеннаяПодсказка" id="170"/>
+				</InputField>
+				<InputField name="ДокументыВид" id="171">
+					<DataPath>Объект.Документы.Вид</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<DropListButton>true</DropListButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДокументыВидКонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="ДокументыВидРасширеннаяПодсказка" id="173"/>
+					<Events>
+						<Event name="OnChange">ДокументыВидПриИзменении</Event>
+						<Event name="StartChoice">ДокументыВидНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДокументыДокумент" id="174">
+					<DataPath>Объект.Документы.Документ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ДокументыДокументКонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="ДокументыДокументРасширеннаяПодсказка" id="176"/>
+					<Events>
+						<Event name="OnChange">ДокументыДокументПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ДокументыЗагрузить" id="177">
+					<DataPath>Объект.Документы.Загрузить</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДокументыЗагрузитьКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ДокументыЗагрузитьРасширеннаяПодсказка" id="179"/>
+					<Events>
+						<Event name="OnChange">ДокументыЗагрузитьПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаДокументовЭДО</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:57a438a0-5aae-43f1-9452-11a2b20e3aef</Field>
+				<Field>1/0:7a1613bb-d4d1-4c68-ac0f-ccfcf83aa637</Field>
+				<Field>1/0:bdb4d587-d4c3-466f-9a92-5c3bcd771cd7</Field>
+				<Field>Объект.Идентификатор</Field>
+				<Field>Объект.Номер</Field>
+				<Field>Объект.Оператор</Field>
+				<Field>Объект.Организация</Field>
+				<Field>Объект.Период</Field>
+				<Field>Объект.Тип</Field>
+			</Save>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументыВид</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Документы.Документ</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументыДокумент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ДокументыЗагрузить</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Документы.Вид</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаДокументыЗаполнить</Action>
+		</Command>
+		<Command name="КомандаВыполнить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВыполнить</Action>
+		</Command>
+		<Command name="КомандаОбновить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда список заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаДокументыОбновить</Action>
+		</Command>
+	</Commands>
+</Form>

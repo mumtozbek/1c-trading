@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="f966f216-43af-407c-8f65-5913e093f3cf">
+		<Name>ГосударственныйОрган</Name>
+		<Code>000000003</Code>
+		<Description>Государственный орган</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="65b1c69c-d8df-4779-8b56-234cd140a18f">
+		<Name>Покупатель</Name>
+		<Code>000000002</Code>
+		<Description>Покупатель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="afd58146-6465-4261-9081-73616bfe6e0a">
+		<Name>Поставщик</Name>
+		<Code>000000001</Code>
+		<Description>Поставщик</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

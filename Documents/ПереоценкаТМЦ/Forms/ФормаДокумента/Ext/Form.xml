@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="108">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="110">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<InputField name="Номер" id="1">
+							<DataPath>Объект.Number</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Дата" id="4">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="112">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="113"/>
+					<ChildItems>
+						<InputField name="Организация" id="10">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="СтавкаНДС" id="7">
+							<DataPath>Объект.СтавкаНДС</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Page name="ГруппаЦены" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЦеныРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<Table name="Цены" id="71">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Цены</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЦеныКонтекстноеМеню" id="72"/>
+							<AutoCommandBar name="ЦеныКоманднаяПанель" id="73">
+								<ChildItems>
+									<Button name="ЦеныЦеныЗаполнить" id="118">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЦеныЗаполнить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЦеныЦеныЗаполнитьРасширеннаяПодсказка" id="119"/>
+									</Button>
+									<Button name="ЦеныЦеныОбновить" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЦеныОбновить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЦеныЦеныОбновитьРасширеннаяПодсказка" id="121"/>
+									</Button>
+									<Button name="ЦеныЦеныУдалитьПС" id="122">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЦеныУдалитьПС</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удалить ПС</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЦеныЦеныУдалитьПСРасширеннаяПодсказка" id="123"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЦеныРасширеннаяПодсказка" id="74"/>
+							<SearchStringAddition name="ЦеныСтрокаПоиска" id="75">
+								<AdditionSource>
+									<Item>Цены</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЦеныСтрокаПоискаКонтекстноеМеню" id="76"/>
+								<ExtendedTooltip name="ЦеныСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЦеныСостояниеПросмотра" id="78">
+								<AdditionSource>
+									<Item>Цены</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЦеныСостояниеПросмотраКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ЦеныСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЦеныУправлениеПоиском" id="81">
+								<AdditionSource>
+									<Item>Цены</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЦеныУправлениеПоискомКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ЦеныУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЦеныНомерСтроки" id="84">
+									<DataPath>Объект.Цены.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦеныНомерСтрокиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ЦеныНомерСтрокиРасширеннаяПодсказка" id="86"/>
+								</LabelField>
+								<InputField name="ЦеныТовар" id="87">
+									<DataPath>Объект.Цены.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЦеныТоварКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ЦеныТоварРасширеннаяПодсказка" id="89"/>
+									<Events>
+										<Event name="OnChange">ЦеныТоварПриИзменении</Event>
+									</Events>
+								</InputField>
+								<ColumnGroup name="ЦеныГруппа1" id="135">
+									<ExtendedTooltip name="ЦеныГруппа1РасширеннаяПодсказка" id="136"/>
+									<ChildItems>
+										<InputField name="ЦеныЦенаПродажнаяСтарая" id="93">
+											<DataPath>Объект.Цены.ЦенаПродажнаяСтарая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЦеныЦенаПродажнаяСтараяКонтекстноеМеню" id="94"/>
+											<ExtendedTooltip name="ЦеныЦенаПродажнаяСтараяРасширеннаяПодсказка" id="95"/>
+											<Events>
+												<Event name="OnChange">ЦеныЦенаПродажнаяСтараяПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЦеныГруппа2" id="137">
+									<ExtendedTooltip name="ЦеныГруппа2РасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<InputField name="ЦеныЦенаПродажнаяНовая" id="96">
+											<DataPath>Объект.Цены.ЦенаПродажнаяНовая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЦеныЦенаПродажнаяНоваяКонтекстноеМеню" id="97"/>
+											<ExtendedTooltip name="ЦеныЦенаПродажнаяНоваяРасширеннаяПодсказка" id="98"/>
+											<Events>
+												<Event name="OnChange">ЦеныЦенаПродажнаяНоваяПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЦеныГруппа3" id="139">
+									<ExtendedTooltip name="ЦеныГруппа3РасширеннаяПодсказка" id="140"/>
+									<ChildItems>
+										<CheckBoxField name="ЦеныЗаписать" id="152">
+											<DataPath>Объект.Цены.Записать</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЦеныЗаписатьКонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ЦеныЗаписатьРасширеннаяПодсказка" id="154"/>
+										</CheckBoxField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТовары" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<Table name="Товары" id="23">
+							<Representation>List</Representation>
+							<DefaultItem>true</DefaultItem>
+							<Footer>true</Footer>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Товары</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварыКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="ТоварыКоманднаяПанель" id="25">
+								<ChildItems>
+									<Button name="ТоварыТоварыЗаполнить" id="114">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТоварыЗаполнить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТоварыТоварыЗаполнитьРасширеннаяПодсказка" id="115"/>
+									</Button>
+									<Button name="ТоварыТоварыОбновить" id="116">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТоварыОбновить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТоварыТоварыОбновитьРасширеннаяПодсказка" id="117"/>
+									</Button>
+									<Button name="ТоварыТоварыУдалитьПС" id="124">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТоварыУдалитьПС</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Удалить ПС</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ТоварыТоварыУдалитьПСРасширеннаяПодсказка" id="125"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="ТоварыСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ТоварыСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварыСостояниеПросмотра" id="30">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварыУправлениеПоиском" id="33">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ТоварыПриОкончанииРедактирования</Event>
+								<Event name="AfterDeleteRow">ТоварыПослеУдаления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТоварыНомерСтроки" id="36">
+									<DataPath>Объект.Товары.LineNumber</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>№</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="38"/>
+								</LabelField>
+								<InputField name="ТоварыСклад" id="39">
+									<DataPath>Объект.Товары.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыСкладКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ТоварыСкладРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<InputField name="ТоварыТовар" id="42">
+									<DataPath>Объект.Товары.Товар</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыТоварКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ТоварыТоварРасширеннаяПодсказка" id="44"/>
+									<Events>
+										<Event name="OnChange">ТоварыТоварПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТоварыКоличество" id="45">
+									<DataPath>Объект.Товары.Количество</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="47"/>
+								</InputField>
+								<ColumnGroup name="ТоварыГруппа1" id="102">
+									<ExtendedTooltip name="ТоварыГруппа1РасширеннаяПодсказка" id="103"/>
+									<ChildItems>
+										<InputField name="ТоварыСуммаБазоваяСтарая" id="48">
+											<DataPath>Объект.Товары.СуммаСтарая</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<FooterDataPath>Объект.Товары.TotalСуммаСтарая</FooterDataPath>
+											<ContextMenu name="ТоварыСуммаБазоваяСтараяКонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="ТоварыСуммаБазоваяСтараяРасширеннаяПодсказка" id="50"/>
+										</InputField>
+										<InputField name="ТоварыЦенаБазовая" id="51">
+											<DataPath>Объект.Товары.ЦенаБазовая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыЦенаБазоваяКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ТоварыЦенаБазоваяРасширеннаяПодсказка" id="53"/>
+											<Events>
+												<Event name="OnChange">ТоварыЦенаБазоваяПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТоварыГруппа2" id="104">
+									<ExtendedTooltip name="ТоварыГруппа2РасширеннаяПодсказка" id="105"/>
+									<ChildItems>
+										<InputField name="ТоварыКоэффициент" id="54">
+											<DataPath>Объект.Товары.Коэффициент</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыКоэффициентКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="ТоварыКоэффициентРасширеннаяПодсказка" id="56"/>
+											<Events>
+												<Event name="OnChange">ТоварыКоэффициентПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ТоварыГруппа3" id="106">
+									<ExtendedTooltip name="ТоварыГруппа3РасширеннаяПодсказка" id="107"/>
+									<ChildItems>
+										<InputField name="ТоварыСуммаБазоваяНовая" id="60">
+											<DataPath>Объект.Товары.СуммаНовая</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<FooterDataPath>Объект.Товары.TotalСуммаНовая</FooterDataPath>
+											<ContextMenu name="ТоварыСуммаБазоваяНоваяКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="ТоварыСуммаБазоваяНоваяРасширеннаяПодсказка" id="62"/>
+										</InputField>
+										<InputField name="ТоварыЦенаБазоваяНовая" id="63">
+											<DataPath>Объект.Товары.ЦенаБазоваяНовая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыЦенаБазоваяНоваяКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="ТоварыЦенаБазоваяНоваяРасширеннаяПодсказка" id="65"/>
+											<Events>
+												<Event name="OnChange">ТоварыЦенаБазоваяНоваяПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ТоварыСуммаПереоценки" id="66">
+									<DataPath>Объект.Товары.СуммаПереоценки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<FooterDataPath>Объект.Товары.TotalСуммаПереоценки</FooterDataPath>
+									<ContextMenu name="ТоварыСуммаПереоценкиКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ТоварыСуммаПереоценкиРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<ColumnGroup name="ТоварыГруппа4" id="141">
+									<ExtendedTooltip name="ТоварыГруппа4РасширеннаяПодсказка" id="142"/>
+									<ChildItems>
+										<InputField name="ТоварыСтавкаНДССтарая" id="143">
+											<DataPath>Объект.Товары.СтавкаНДССтарая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыСтавкаНДССтараяКонтекстноеМеню" id="144"/>
+											<ExtendedTooltip name="ТоварыСтавкаНДССтараяРасширеннаяПодсказка" id="145"/>
+										</InputField>
+										<InputField name="ТоварыСтавкаНДСНовая" id="146">
+											<DataPath>Объект.Товары.СтавкаНДСНовая</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыСтавкаНДСНоваяКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ТоварыСтавкаНДСНоваяРасширеннаяПодсказка" id="148"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<CheckBoxField name="ТоварыЗаписать" id="149">
+									<DataPath>Объект.Товары.Записать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТоварыЗаписатьКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ТоварыЗаписатьРасширеннаяПодсказка" id="151"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПереоценкаТМЦ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТоварыЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТоварыЗаполнить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ТоварыОбновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТоварыОбновить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЦеныЗаполнить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЦеныЗаполнить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЦеныОбновить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЦеныОбновить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ЦеныУдалитьПС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены удалить ПС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены удалить ПС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЦеныУдалитьПС</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ТоварыУдалитьПС" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары удалить ПС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары удалить ПС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТоварыУдалитьПС</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+</Form>

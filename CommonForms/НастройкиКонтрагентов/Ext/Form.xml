@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<CheckBoxField name="Контрагенты_КонтрольУникальностиИНН" id="1">
+			<DataPath>НаборКонстант.Контрагенты_КонтрольУникальностиИНН</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_КонтрольУникальностиИННКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Контрагенты_КонтрольУникальностиИННРасширеннаяПодсказка" id="3"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_КонтрольУникальностиПИНФЛ" id="4">
+			<DataPath>НаборКонстант.Контрагенты_КонтрольУникальностиПИНФЛ</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_КонтрольУникальностиПИНФЛКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="Контрагенты_КонтрольУникальностиПИНФЛРасширеннаяПодсказка" id="6"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_ИскатьПоПолномуНаименованию" id="7">
+			<DataPath>НаборКонстант.Контрагенты_ИскатьПоПолномуНаименованию</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_ИскатьПоПолномуНаименованиюКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="Контрагенты_ИскатьПоПолномуНаименованиюРасширеннаяПодсказка" id="9"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_ПолнотекстовыйПоиск" id="10">
+			<DataPath>НаборКонстант.Контрагенты_ПолнотекстовыйПоиск</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_ПолнотекстовыйПоискКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Контрагенты_ПолнотекстовыйПоискРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_ТранслитерацияВПоиске" id="13">
+			<DataPath>НаборКонстант.Контрагенты_ТранслитерацияВПоиске</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_ТранслитерацияВПоискеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Контрагенты_ТранслитерацияВПоискеРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_ТранслитерацияНаименованияПриЗаписи" id="16">
+			<DataPath>НаборКонстант.Контрагенты_ТранслитерацияНаименованияПриЗаписи</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_ТранслитерацияНаименованияПриЗаписиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Контрагенты_ТранслитерацияНаименованияПриЗаписиРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="Контрагенты_ТрансформироватьНаименованияВВерхнийРегистр" id="19">
+			<DataPath>НаборКонстант.Контрагенты_ТрансформироватьНаименованияВВерхнийРегистр</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="Контрагенты_ТрансформироватьНаименованияВВерхнийРегистрКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Контрагенты_ТрансформироватьНаименованияВВерхнийРегистрРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

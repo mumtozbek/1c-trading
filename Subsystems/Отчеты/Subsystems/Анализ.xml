@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Subsystem uuid="a074f4ef-8e1c-4d40-9b7d-b4c5dd7585e0">
+		<Properties>
+			<Name>Анализ</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анализ</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализНаценок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализСтоимости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализБонусов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализСкидок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Пенетрация</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

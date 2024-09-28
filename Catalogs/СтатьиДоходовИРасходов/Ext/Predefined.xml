@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="bddb6f10-8a55-4fe8-977c-4b609a200ec0">
+		<Name>БанковскаяОперация</Name>
+		<Code>000000006</Code>
+		<Description>Банковская операция</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="135f2bb0-6d9a-43a1-931c-daac5d97006f">
+		<Name>Зарплата</Name>
+		<Code>000000001</Code>
+		<Description>Зарплата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3692484a-23e9-453d-b71b-59c4b7c63ba3">
+		<Name>Округление</Name>
+		<Code>000000005</Code>
+		<Description>Округление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9886ca36-aff2-428d-92b1-55744e93352e">
+		<Name>ПереносОстатков</Name>
+		<Code>000000004</Code>
+		<Description>Перенос остатков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cf6b2c23-9d37-447e-813f-5a94f154abb8">
+		<Name>РозничнаяТорговля</Name>
+		<Code>000000002</Code>
+		<Description>Розничная торговля</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f74fc525-d972-4aee-b518-4440c9612564">
+		<Name>СписаниеТоваров</Name>
+		<Code>000000003</Code>
+		<Description>Списание товаров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

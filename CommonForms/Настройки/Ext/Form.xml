@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ИдентификаторИБ" id="34">
+			<DataPath>НаборКонстант.ИдентификаторИБ</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторИБКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="ИдентификаторИБРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="ОсновнаяОрганизация" id="1">
+			<DataPath>НаборКонстант.ОсновнаяОрганизация</DataPath>
+			<ContextMenu name="ОсновнаяОрганизацияКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОсновнаяОрганизацияРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ОсновнойСклад" id="4">
+			<DataPath>НаборКонстант.ОсновнойСклад</DataPath>
+			<ContextMenu name="ОсновнойСкладКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОсновнойСкладРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ОсновнойПоставщик" id="7">
+			<DataPath>НаборКонстант.ОсновнойПоставщик</DataPath>
+			<ContextMenu name="ОсновнойПоставщикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОсновнойПоставщикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ПрефиксКодаСправочников" id="28">
+			<DataPath>НаборКонстант.ПрефиксКодаСправочников</DataPath>
+			<ContextMenu name="ПрефиксКодаСправочниковКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ПрефиксКодаСправочниковРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ПрефиксНомераДокументов" id="31">
+			<DataPath>НаборКонстант.ПрефиксНомераДокументов</DataPath>
+			<ContextMenu name="ПрефиксНомераДокументовКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ПрефиксНомераДокументовРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<CheckBoxField name="ВестиУчетПоПроектам" id="10">
+			<DataPath>НаборКонстант.ВестиУчетПоПроектам</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВестиУчетПоПроектамКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВестиУчетПоПроектамРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВестиУчетПоФилиалам" id="37">
+			<DataPath>НаборКонстант.ВестиУчетПоФилиалам</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВестиУчетПоФилиаламКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ВестиУчетПоФилиаламРасширеннаяПодсказка" id="39"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВестиУчетПоВесамТоваров" id="13">
+			<DataPath>НаборКонстант.ВестиУчетПоВесамТоваров</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВестиУчетПоВесамТоваровКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВестиУчетПоВесамТоваровРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВестиУчетПоОбъемамТоваров" id="16">
+			<DataPath>НаборКонстант.ВестиУчетПоОбъемамТоваров</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВестиУчетПоОбъемамТоваровКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ВестиУчетПоОбъемамТоваровРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВестиУчетТоваровПоУпаковкам" id="19">
+			<DataPath>НаборКонстант.ВестиУчетПоУпаковкамТоваров</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВестиУчетТоваровПоУпаковкамКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ВестиУчетТоваровПоУпаковкамРасширеннаяПодсказка" id="21"/>
+		</CheckBoxField>
+		<CheckBoxField name="КонтрольПравДоступа" id="25">
+			<DataPath>НаборКонстант.КонтрольПравДоступа</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="КонтрольПравДоступаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КонтрольПравДоступаРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

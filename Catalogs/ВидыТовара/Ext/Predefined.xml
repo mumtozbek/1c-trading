@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.16">
+	<Item id="217e1a11-53a3-493e-8924-ce43eab78298">
+		<Name>Материал</Name>
+		<Code>000000005</Code>
+		<Description>Материал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="278c77a4-4689-42ab-b75a-7df21656017b">
+		<Name>НакладныеРасходы</Name>
+		<Code>000000004</Code>
+		<Description>Накладные расходы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0655afa3-bece-4968-8955-61bc57676221">
+		<Name>ТараВозвратная</Name>
+		<Code>000000003</Code>
+		<Description>Тара возвратная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="53dec1ac-3aad-40fb-8ea5-4fd9e5677c2e">
+		<Name>ТараПродажная</Name>
+		<Code>000000002</Code>
+		<Description>Тара продажная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0be2aa77-89e5-4db6-ab1e-0b6dc95e4e22">
+		<Name>Товар</Name>
+		<Code>000000001</Code>
+		<Description>Товар</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0b252440-c434-4a4f-b63f-ed00aa6e750b">
+		<Name>ФинансоваяСкидка</Name>
+		<Code>000000006</Code>
+		<Description>Финансовая скидка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

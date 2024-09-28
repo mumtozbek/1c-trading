@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИмяСправочника" id="1">
+			<DataPath>Объект.ИмяСправочника</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ИмяСправочникаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяСправочникаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ИмяСправочникаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяРеквизита" id="4">
+			<DataPath>Объект.ИмяРеквизита</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ContextMenu name="ИмяРеквизитаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяРеквизитаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ИмяРеквизитаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ГруппаОперации" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа операции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа операции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОперацииРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<CheckBoxField name="ПропускатьУдаленные" id="51">
+					<DataPath>Объект.ПропускатьУдаленные</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ПропускатьУдаленныеКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ПропускатьУдаленныеРасширеннаяПодсказка" id="53"/>
+				</CheckBoxField>
+				<CheckBoxField name="Объединить" id="36">
+					<DataPath>Объект.Объединить</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ОбъединитьКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОбъединитьРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+				<CheckBoxField name="Удалить" id="39">
+					<DataPath>Объект.Удалить</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="УдалитьКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="41"/>
+				</CheckBoxField>
+				<CheckBoxField name="Проведение" id="48">
+					<DataPath>Объект.Проведение</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ПроведениеКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ПроведениеРасширеннаяПодсказка" id="50"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Строки" id="9">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Строки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СтрокиКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="СтрокиКоманднаяПанель" id="11">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СтрокиСтрокиЗаполнить" id="44">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.СтрокиЗаполнить</CommandName>
+						<ExtendedTooltip name="СтрокиСтрокиЗаполнитьРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="СтрокиСтрокиИсправить" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СтрокиИсправить</CommandName>
+						<TextColor>#FFFFFF</TextColor>
+						<BackColor>#FF0000</BackColor>
+						<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+						<ExtendedTooltip name="СтрокиСтрокиИсправитьРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СтрокиРасширеннаяПодсказка" id="12"/>
+			<SearchStringAddition name="СтрокиСтрокаПоиска" id="13">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиСтрокаПоискаКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СтрокиСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтрокиСостояниеПросмотра" id="16">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиСостояниеПросмотраКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="СтрокиСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтрокиУправлениеПоиском" id="19">
+				<AdditionSource>
+					<Item>Строки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтрокиУправлениеПоискомКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="СтрокиУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СтрокиПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СтрокиПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ЭлементыЗначение" id="25">
+					<DataPath>Объект.Строки.Значение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЭлементыЗначениеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЭлементыЗначениеРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="ЭлементыОсновной" id="31">
+					<DataPath>Объект.Строки.Основной</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+					<ContextMenu name="ЭлементыОсновнойКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЭлементыОсновнойРасширеннаяПодсказка" id="33"/>
+					<Events>
+						<Event name="StartChoice">СтрокиОсновнойНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЭлементыВарианты" id="28">
+					<DataPath>Объект.Строки.Варианты</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<QuickChoice>true</QuickChoice>
+					<ContextMenu name="ЭлементыВариантыКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ЭлементыВариантыРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПоискИУдалениеДубликатовСправочника</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>1/0:50fa705b-5bb1-4c54-87a9-b074a9ae59e7</Field>
+				<Field>1/0:c4855940-d0fd-40e8-8539-cd98587fe10a</Field>
+				<Field>Объект.ИмяРеквизита</Field>
+				<Field>Объект.ИмяСправочника</Field>
+				<Field>Объект.Объединить</Field>
+				<Field>Объект.Проведение</Field>
+				<Field>Объект.ПропускатьУдаленные</Field>
+				<Field>Объект.Удалить</Field>
+			</Save>
+			<Columns>
+				<AdditionalColumns table="Объект.Строки">
+					<Column name="Варианты" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Варианты</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8:ValueListType</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СтрокиЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строки заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтрокиЗаполнить</Action>
+		</Command>
+		<Command name="СтрокиИсправить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строки исправить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтрокиИсправить</Action>
+		</Command>
+	</Commands>
+</Form>
